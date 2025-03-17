@@ -1,0 +1,6 @@
+displayName = Fargos Souls Mod Old DLC Recreation
+author = The Terrarian
+version = 0.33
+modReferences = Fargowiltas@3.3.5, FargowiltasSouls@1.7
+weakReferences = DBZMODPORT@1.0.0.3, CalamityMod@2.0.4.1, ThoriumMod@1.7.2.2, SpiritMod@1.5.0.32, SpiritBardHealer@0.4.2, CalamityBardHealer@0.9.7, SacredTools@1.2.3
+sortAfter = Fargowiltas, FargowiltasSouls, DBZMODPORT, CalamityMod, ThoriumMod, SpiritMod, SpiritBardHealer, CalamityBardHealer, SacredTools

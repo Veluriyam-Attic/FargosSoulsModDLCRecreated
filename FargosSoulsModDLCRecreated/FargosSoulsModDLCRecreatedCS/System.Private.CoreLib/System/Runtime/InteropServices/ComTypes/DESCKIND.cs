@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace System.Runtime.InteropServices.ComTypes
+{
+	// Token: 0x020004C9 RID: 1225
+	public enum DESCKIND
+	{
+		// Token: 0x04000FEC RID: 4076
+		DESCKIND_NONE,
+		// Token: 0x04000FED RID: 4077
+		DESCKIND_FUNCDESC,
+		// Token: 0x04000FEE RID: 4078
+		DESCKIND_VARDESC,
+		// Token: 0x04000FEF RID: 4079
+		DESCKIND_TYPECOMP,
+		// Token: 0x04000FF0 RID: 4080
+		DESCKIND_IMPLICITAPPOBJ,
+		// Token: 0x04000FF1 RID: 4081
+		DESCKIND_MAX
+	}
+}
