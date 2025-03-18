@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB9BCF64-B4A0-42BB-87E7-4FF21276872B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FargosSoulsModDLCRecreated</RootNamespace>
+    <AssemblyName>FargosSoulsModDLCRecreated</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CalamityMod">
+      <HintPath>..\..\FargosSoulsModDLCRecreated\CalamityMod.dll</HintPath>
+    </Reference>
+    <Reference Include="DBZMODPORT" />
+    <Reference Include="Fargowiltas" />
+    <Reference Include="FargowiltasSouls" />
+    <Reference Include="FNA" />
+    <Reference Include="log4net" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ReLogic" />
+    <Reference Include="SacredTools" />
+    <Reference Include="SpiritMod" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Linq">
+      <HintPath>D:\Tool\dnSpy-net-win64\bin\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="System.Net.Mail" />
+    <Reference Include="System.Runtime">
+      <HintPath>D:\Tool\dnSpy-net-win64\bin\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ThoriumMod" />
+    <Reference Include="tModLoader" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buffs\Magma.cs" />
+    <Compile Include="CalDLCPlayer.cs" />
+    <Compile Include="DLCGlobalNPC.cs" />
+    <Compile Include="DLCPlayer.cs" />
+    <Compile Include="Items\Calamity\Enchantments\AerospecEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\AstralEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\AtaxiaEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\AuricEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\BloodflareEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\BrimflameEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\DaedalusEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\DemonShadeEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\EmpyreanEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\FathomSwarmerEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\FearmongerEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\GodSlayerEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\MolluskEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\OmegaBlueEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\PlagueReaperEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\ReaverEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\SilvaEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\SnowRuffianEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\StatigelEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\SulphurousEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\TarragonEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\UmbraphileEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\VictideEnchantment.cs" />
+    <Compile Include="Items\Calamity\Enchantments\WulfrumEnchantment.cs" />
+    <Compile Include="Items\Calamity\Forces\AnnihilationForce.cs" />
+    <Compile Include="Items\Calamity\Forces\DesolationForce.cs" />
+    <Compile Include="Items\Calamity\Forces\DevastationForce.cs" />
+    <Compile Include="Items\Calamity\Forces\ExaltationForce.cs" />
+    <Compile Include="Items\Calamity\RogueEssence.cs" />
+    <Compile Include="Items\Calamity\Souls\CalamitySoul.cs" />
+    <Compile Include="Items\Calamity\Souls\RogueSoul.cs" />
+    <Compile Include="Items\DBZ\KiSoul.cs" />
+    <Compile Include="Items\DLCItemChanges.cs" />
+    <Compile Include="Items\DLCRecipeChanges.cs" />
+    <Compile Include="Items\SOA\Enchantments\PrairieEnchantment.cs" />
+    <Compile Include="Items\Spirit\Enchantments\ApostleEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\AstraliteEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\BismiteEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\BloodcourtEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\BotanistEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\CascadeEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\ChitinEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\CryoliteEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\DriftwoodEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\DuskEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\ElderbarkEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\FloranEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\FrigidEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\GraniteChunkEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\MarbleChunkEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\MarksmanEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\PainMongerEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\PrimalstoneEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\RogueEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\RunicEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\SeraphEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\SlagTyrantEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\SpiritEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\StreamSurferEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\SunflowerEnchant.cs" />
+    <Compile Include="Items\Spirit\Enchantments\WayfarersEnchant.cs" />
+    <Compile Include="Items\Spirit\Forces\AdventurerForce.cs" />
+    <Compile Include="Items\Spirit\Forces\AtlantisForce.cs" />
+    <Compile Include="Items\Spirit\Forces\FrostburnForce.cs" />
+    <Compile Include="Items\Spirit\Forces\HurricaneForce.cs" />
+    <Compile Include="Items\Spirit\Souls\SpiritSoul.cs" />
+    <Compile Include="Items\Thorium\Enchantments\AssassinEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\BerserkerEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\BiotechEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\BronzeEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\BulbEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\CelestialEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\ConduitEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\CrierEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\CryomancerEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\CyberPunkEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\DangerEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\DarksteelEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\DemonBloodEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\DepthDiverEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\DragonEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\DreadEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\DreamWeaverEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\DurasteelEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\EbonEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\FallenPaladinEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\FleshEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\FlightEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\FungusEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\GeodeEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\GraniteEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\HarbingerEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\IcyEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\IllumiteEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\IridescentEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\JesterEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\LichEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\LifeBinderEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\LifeBloomEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\LivingWoodEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\LodestoneEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\MaestroEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\MagmaEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\MalignantEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\MarchingBandEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\NagaSkinEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\NobleEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\NoviceClericEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\OceanEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\OrnateEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\PlagueDoctorEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\PyromancerEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\RhapsodistEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\SacredEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\SandstoneEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\ShadeMasterEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\ShootingStarEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\SilkEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\SpiritTrapperEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\SteelEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\TemplarEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\TerrariumEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\ThoriumEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\TideHunterEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\TideTurnerEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\TitanEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\ValadiumEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\WarlockEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\WhisperingEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\WhiteDwarfEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\WhiteKnightEnchantment.cs" />
+    <Compile Include="Items\Thorium\Enchantments\YewWoodEnchantment.cs" />
+    <Compile Include="Items\Thorium\Essences\BardEssence.cs" />
+    <Compile Include="Items\Thorium\Essences\HealerEssence.cs" />
+    <Compile Include="Items\Thorium\Forces\AlfheimForce.cs" />
+    <Compile Include="Items\Thorium\Forces\AsgardForce.cs" />
+    <Compile Include="Items\Thorium\Forces\HelheimForce.cs" />
+    <Compile Include="Items\Thorium\Forces\JotunheimForce.cs" />
+    <Compile Include="Items\Thorium\Forces\MidgardForce.cs" />
+    <Compile Include="Items\Thorium\Forces\MuspelheimForce.cs" />
+    <Compile Include="Items\Thorium\Forces\NiflheimForce.cs" />
+    <Compile Include="Items\Thorium\Forces\SvartalfheimForce.cs" />
+    <Compile Include="Items\Thorium\Forces\VanaheimForce.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\ArcaneDust.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\BerserkerBreastplate.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\BerserkerGreaves.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\BerserkerMask.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\BerserkerShard.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\DangerGreaves.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\DangerHelmet.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\DangerMail.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\DangerShard.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\HarbingerCatalyst.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\HarbingerChestguard.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\HarbingerGreaves.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\HarbingerHelmet.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\MagmaChestguard.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\MagmaGreaves.cs" />
+    <Compile Include="Items\Thorium\Miscellaneous\MagmaHelmet.cs" />
+    <Compile Include="Items\Thorium\Souls\BardSoul.cs" />
+    <Compile Include="Items\Thorium\Souls\GuardianAngelsSoul.cs" />
+    <Compile Include="Items\Thorium\Souls\ThoriumSoul.cs" />
+    <Compile Include="NPCLOOT.cs" />
+    <Compile Include="OrbitalLayerBack.cs" />
+    <Compile Include="OrbitalLayerBase.cs" />
+    <Compile Include="OrbitalLayerFront.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoulToggles\AlfheimForceHeader.cs" />
+    <Compile Include="SoulToggles\AnnihilationForceHeader.cs" />
+    <Compile Include="SoulToggles\AsgardForceHeader.cs" />
+    <Compile Include="SoulToggles\DesolationForceHeader.cs" />
+    <Compile Include="SoulToggles\DevastationForceHeader.cs" />
+    <Compile Include="SoulToggles\ExaltationForceHeader.cs" />
+    <Compile Include="SoulToggles\HelheimForceHeader.cs" />
+    <Compile Include="SoulToggles\JotunheimForceHeader.cs" />
+    <Compile Include="SoulToggles\MidgardForceHeader.cs" />
+    <Compile Include="SoulToggles\MuspelheimForceHeader.cs" />
+    <Compile Include="SoulToggles\NiflheimForceHeader.cs" />
+    <Compile Include="SoulToggles\SvartalfheimForceHeader.cs" />
+    <Compile Include="SoulToggles\VanaheimForceHeader.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
